@@ -6,7 +6,7 @@ const routes = require('./routes');//llamado rutas
 
 const app = express();// cremaos una nueva instancia
 const port = 3000;// puerto de salida 
-
+app.use(express.static('public'));
 app.use(express.json()) //configurar tipo de dato js
 
 app.use('/api', routes);//configura la url base y tutas
