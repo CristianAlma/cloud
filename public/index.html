@@ -119,7 +119,7 @@
         /MOSTRAR DATOS EN TABLA USANDO FETCH/
         document.addEventListener('DOMContentLoaded', fetchClientes);
         async function fetchClientes() {
-            const response = await fetch('http://3.84.185.42:3000/api/customers');
+            const response = await fetch('/api/customers');
             const clientes = await response.json();
             const tbody = document.getElementById('clientesTable').querySelector('tbody');
             tbody.innerHTML = '';
@@ -172,7 +172,7 @@
         /MOSTRAR DATOS EN TABLA USANDO FETCH/
         document.addEventListener('DOMContentLoaded', fetchInventarios);
         async function fetchInventarios() {
-            const response = await fetch('http://3.84.185.42:3000/api/inventarios');
+            const response = await fetch('/api/inventarios');
             const inventarios = await response.json();
             const tbody = document.getElementById('inventariosTable').querySelector('tbody');
             tbody.innerHTML = '';
